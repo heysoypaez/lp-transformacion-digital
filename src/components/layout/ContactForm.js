@@ -9,6 +9,7 @@ function ContactForm(props) {
       name="contact-form"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      action="/gracias"
     >
       <h2 className="ContactForm__title">
         <span className="ContactForm__title-base">Solicita una demo</span>{" "}
