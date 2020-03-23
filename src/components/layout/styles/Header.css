@@ -7,11 +7,6 @@
 	font-family: Futura, sans-serif;
 }
 
-.header__item-2 h1 {
-	font-weight: normal;
-	font-size: 18px;
-}
-
 .header li {
 	list-style-type: none;
 }
@@ -23,12 +18,9 @@
 		grid-column: 1/2;
 	}
 
-	.header__item-2 {
-		grid-column: 2/5;	
-	}
 
-	.header__item-3 {
-		grid-column: 5/7;
+	.header__item-2 {
+		grid-column: 4/7;
 	}	
 }
 
@@ -46,8 +38,14 @@
 		text-align: center;
 	}
 
-	.header__item-2 h1 {
+	.header__item-2  {
 		margin: 0;
 	}
 
+}
+
+.header_icon {
+	background: black;
+  padding: 8px;
+  border-radius: 30px;
 }

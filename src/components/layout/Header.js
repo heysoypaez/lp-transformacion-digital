@@ -1,24 +1,61 @@
-import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "./styles/Header.css"
+import phoneIcon from "../../images/icons/phone-solid.svg"
+import envelopeIcon from "../../images/icons/envelope-solid.svg"
 
-const Header = ({ siteTitle }) => (
-  <header class="header">
-    <figure class="header__item header__item-1">
-      <img src="../images/img/grouping-logo.png" width="350" />
-    </figure>
-    <section class="header__item header__item-2">
-    </section>
-    <section class="header__item header__item-3">
-      <ul>
-        <li>  <img src="../images/icons/phone-solid.svg" width="24px" height="24px" /><a href="tel:+56987572595">+56987572595</a>/ <a href="tel:223780015">223780015</a> </li>
-        <li>  <img src="../images/icons/envelope-solid.svg" /> <a href="mailto:info@smoothtalkers.cl">info@smoothtalkers.cl </a></li>
-      </ul>
-    </section>
-  </header>
+const Header = ({ siteTitle }) => {
 
-)
+  const data = useStaticQuery(graphql`
+  fragment logoImage on File {
+    childImageSharp {
+      fluid( maxHeight: 100) {
+          src
+          srcSet
+          sizes
+          aspectRatio 
+          base64
+        }
+      }
+    }
+    
+    query HeaderQuery {
+      file(relativePath: { eq: "images/logos/impulsados-fondo-transparente.png" }) {
+        ...logoImage
+      }
+    }
+  `)
+
+  return (
+    <header className="header">
+      <figure className="header__item header__item-1">
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </figure>
+      <section className="header__item header__item-2">
+        <ul>
+          <li>
+            {" "}
+            <img
+              src={phoneIcon}
+              width="24px"
+              height="24px"
+              className="header_icon"
+            />
+            <a href="tel:+56987572595">+56987572595</a>/{" "}
+            <a href="tel:223780015">223780015</a>{" "}
+          </li>
+          <li>
+            {" "}
+            <img src={envelopeIcon} className="header_icon" />{" "}
+            <a href="mailto:info@smoothtalkers.cl">info@smoothtalkers.cl </a>
+          </li>
+        </ul>
+      </section>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -5,9 +5,9 @@ import "./styles/AboutUs.css";
 function AboutUs(props) {
 	
 	return(
-		<section class="layout-section about-us-section">
-			<section class="about-us-section__item about-us-section__item-1">
-				<h2 class="about-us-section__item-1__title   title--contrast">¿Quiénes somos?</h2>
+		<section className="layout-section about-us-section">
+			<section className="about-us-section__item about-us-section__item-1">
+				<h2 className="about-us-section__item-1__title   title--contrast">¿Quiénes somos?</h2>
 				<p>Smooth Talkers es una empresa constituida en febrero del 2012, ganadores del Capital Semilla Emprendimiento durante el año 2012.</p>
 
 				<p>Nos dedicamos al entrenamiento personalizado de los idiomas inglés, portugués y español en modalidad presencial y online.</p>
@@ -16,7 +16,7 @@ function AboutUs(props) {
 			</section>
 
 
-			<section class="about-us-section__item about-us-section__item-2">
+			<section className="about-us-section__item about-us-section__item-2">
 				<img src="./../images/img/equipo-en-oficina-smooth-talkers.jpg" width="100%" />
 			</section>
 		</section>
