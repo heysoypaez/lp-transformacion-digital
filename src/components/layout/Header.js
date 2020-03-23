@@ -7,22 +7,23 @@ import phoneIcon from "../../images/icons/phone-solid.svg"
 import envelopeIcon from "../../images/icons/envelope-solid.svg"
 
 const Header = ({ siteTitle }) => {
-
   const data = useStaticQuery(graphql`
-  fragment logoImage on File {
-    childImageSharp {
-      fluid( maxHeight: 100) {
+    fragment logoImage on File {
+      childImageSharp {
+        fluid(maxHeight: 100) {
           src
           srcSet
           sizes
-          aspectRatio 
+          aspectRatio
           base64
         }
       }
     }
-    
+
     query HeaderQuery {
-      file(relativePath: { eq: "images/logos/impulsados-fondo-transparente.png" }) {
+      file(
+        relativePath: { eq: "images/logos/impulsados-fondo-transparente.png" }
+      ) {
         ...logoImage
       }
     }
@@ -43,13 +44,12 @@ const Header = ({ siteTitle }) => {
               height="24px"
               className="header_icon"
             />
-            <a href="tel:+56987572595">+56987572595</a>/{" "}
-            <a href="tel:223780015">223780015</a>{" "}
+            <a href="tel:+56983870290">+569 8387 0290</a>
           </li>
           <li>
             {" "}
             <img src={envelopeIcon} className="header_icon" />{" "}
-            <a href="mailto:info@smoothtalkers.cl">info@smoothtalkers.cl </a>
+            <a href="mailto:f.palacios@impulsados.cl">f.palacios@impulsados.cl </a>
           </li>
         </ul>
       </section>

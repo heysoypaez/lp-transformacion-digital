@@ -6,26 +6,34 @@ figure {
   margin: 0;
 }
 
-p, li,a {
-  font-family: 'Raleway', sans-serif; 
+p,
+li,
+a {
+  font-family: "Raleway", sans-serif;
 }
 
-
-h1, h2,h3 {
+h1,
+h2,
+h3 {
   letter-spacing: 1.2px;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (min-width: 426px) {
-
 }
 
-@media screen and (max-width: 425px) { 
-  h1,h2,h3,h4,h5,h6 {
+@media screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-align: center;
   }
-  section,figure {
+  section,
+  figure {
     justify-content: center;
   }
 }
@@ -39,7 +47,7 @@ a {
 }
 
 @media screen and (min-width: 426px) {
-.layout-section {
-  margin: 2% 0;
-} 
+  .layout-section {
+    margin: 2% 0;
+  }
 }

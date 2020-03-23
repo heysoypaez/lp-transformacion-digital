@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./styles/BenefitsSection.css"
 
 function BenefitsSection(props) {
-
   const data = useStaticQuery(graphql`
     query BenefitsQuery {
       allFile(
@@ -30,17 +29,17 @@ function BenefitsSection(props) {
         }
       }
     }
-  `);
-
+  `)
 
   return (
     <section className="layout-section improve-abilities-section">
       <section className="improve-abilities-section__item improve-abilities-section__item-1">
-        <h3 className="improve-abilities-section__item-1__title">Te ayudamos a</h3>
+        <h3 className="improve-abilities-section__item-1__title">
+          Te ayudamos a
+        </h3>
       </section>
       <section className="improve-abilities-section__item improve-abilities-section__item-2">
         <ul>
-
           <li>
             {" "}
             <Img fixed={data.allFile.edges[2].node.childImageSharp.fixed} />

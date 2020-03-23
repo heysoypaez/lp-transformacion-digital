@@ -25,17 +25,17 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icons/impulsados.jpeg`, // This path is relative to the root of the site.
-      }
+      },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Raleway:400,700', 'Proxima Nova', 'Avenir', 'Anton']
-        }
-      }
-    }
-    
+          families: ["Raleway:400,700", "Proxima Nova", "Avenir", "Anton"],
+        },
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

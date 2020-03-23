@@ -1,0 +1,13 @@
+
+.OurProposalForStudents {
+	display: grid;
+	grid-template-columns: 1fr
+}
+
+.OurProposalForStudents__division {
+  display: flex;
+}
+
+.OurProposalForStudents__division > section:nth-child(1) {
+	margin-right: 5%;
+}

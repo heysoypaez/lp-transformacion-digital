@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, {Fragment} from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -14,12 +14,11 @@ import Footer from "./layout/Footer"
 import "./Layout.css"
 
 const Layout = ({ children }) => {
-
   return (
     <Fragment>
-        <Header />
-        <main class="main">{children}</main>
-        <Footer />
+      <Header />
+      <main class="main">{children}</main>
+      <Footer />
     </Fragment>
   )
 }
