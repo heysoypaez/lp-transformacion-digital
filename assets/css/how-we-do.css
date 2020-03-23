@@ -1,0 +1,39 @@
+.how-we-do-section {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);	
+	grid-gap: 10px;
+}
+
+.how-we-do-section__item-1__title {
+	font-size: 60px;
+	padding-left: 20px;
+	margin: 0;
+}	
+
+@media screen and (min-width: 426px) {
+	.how-we-do-section__item-1 {
+		grid-column: 1/4;
+	}
+
+	.how-we-do-section__item-2 {
+		display: block;
+		grid-column: 4/7;
+		align-self: center;
+	}
+
+	.how-we-do-section p {
+		line-height: 2;
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.how-we-do-section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-gap: 10px;
+		align-items: end;
+		width: 100%;
+	}	
+}
