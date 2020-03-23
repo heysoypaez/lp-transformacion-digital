@@ -5,8 +5,8 @@ import PropTypes from "prop-types"
 function TeamMemberCard({ teamMember, order }) {
   const writtenContent = (
     <section>
-      <h3>{teamMember.name}</h3>
-      <h4>{teamMember.occupation}</h4>
+      <h3 className="TeamMemberCard__name">{teamMember.name}</h3>
+      <h4 className="TeamMemberCard__occupation">{teamMember.occupation}</h4>
       <p className="TeamMemberCard__description">
         {teamMember.occupationDetails}
       </p>
@@ -16,7 +16,13 @@ function TeamMemberCard({ teamMember, order }) {
 
   const photoTeamMember = (
     <figure>
-      <img src={teamMember.photo} alt={teamMember.name} width="200" />
+      <img 
+        src={teamMember.photo} 
+        alt={teamMember.name} 
+        width="220" 
+        heigth="220"
+        className="TeamMemberCard__photo" 
+      />
     </figure>
   )
 
