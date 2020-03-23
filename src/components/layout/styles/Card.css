@@ -1,0 +1,14 @@
+.Card {
+  display: grid;
+  background: white;
+  border-radius: 30px;
+  padding: 3% 5%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.Card__image {
+
+}

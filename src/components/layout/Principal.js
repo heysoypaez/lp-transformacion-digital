@@ -1,33 +1,30 @@
-
-import React from "react";
-import "./styles/Principal.css";
+import React from "react"
+import "./styles/Principal.css"
+import ContactForm from "./ContactForm.js"
 
 function Principal(props) {
-	
-	return(
-		<section class="layout-section principal-section" >
-			<section class="principal-section__item principal-section__item-1">
-				<h1 class="principal-section__item principal-section__item-1__title">Encuentra tu partner de idiomas ideal</h1>
-				<ul>
-					<li>Modalidad de estudio de idiomas personalizada.</li>
-					<li>Toma clases en tu horario de preferencia.</li>
-					<li>Estudia con personas de tu mismo nivel y mismo perfil.</li>
-					<li>Bajo costo.</li>
-				</ul>
-			</section>
-			<section class="principal-section__item principal-section__item-2" id="mas-info">
-				<iframe id="inlineFrameExample"
-			    title="Inline Frame Example"
-			    width="100%"
-			    height="500px"
-			    src="https://form.jotform.com/200316876539663">
-			</iframe>
-
-			</section>
-		</section>
-	)
+  return (
+    <section className="principal-section__out">
+      <section className="layout-section principal-section">
+        <section className="principal-section__item principal-section__item-1">
+          <h1 className="principal-section__item principal-section__item-1__title">
+            Transformación digital para academias e instituciones
+          </h1>
+          <p className="principal-section__item-1__description">
+            Desarrollamos plataformas y sistemas personalizados para adaptar la
+            educación presencial a una modalidad online con foco en el
+            aprendizaje.
+          </p>
+        </section>
+        <section
+          className="principal-section__item principal-section__item-2"
+          id="mas-info"
+        >
+          <ContactForm />
+        </section>
+      </section>
+    </section>
+  )
 }
 
-export default Principal;
-
-
+export default Principal

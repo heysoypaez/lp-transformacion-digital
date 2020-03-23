@@ -1,64 +1,45 @@
-/*@font-face {
-  font-family: Futura;
-  src: url('../fonts/FuturaStd-Book.otf') format("WOFF");
-  font-weight: normal;
-}
-@font-face {
-  font-family: Futura;
-  src: url('../fonts/FuturaStd-Book.otf') format("WOFF");
-  font-weight: 600;
-}*/
-
 body {
-  margin: 5px 3vw;
-  background: #222;
-  color: white;
-}
-
-section > img {
-  border-left: 10px solid #df144c;
-  border-bottom: 10px solid #df144c;
-  border-right: 10px solid #3babbb;
-  border-top: 10px solid #3babbb;
-  padding: 3px;
+  margin: 0;
 }
 
 figure {
   margin: 0;
 }
 
-p, li,a {
-  font-family: Futura, sans-serif;
-  color: white;
+p,
+li,
+a {
+  font-family: "Raleway", sans-serif;
 }
 
-h2 {
-  border-bottom: 5px solid yellow;
-}
-
-h1, h2,h3 {
+h1,
+h2,
+h3 {
   letter-spacing: 1.2px;
   margin: 0;
-  font-family: 'Righteous', cursive;
-  color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (min-width: 426px) {
-
 }
 
-@media screen and (max-width: 425px) { 
-  h1,h2,h3,h4,h5,h6 {
+@media screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-align: center;
   }
-  section,figure {
+  section,
+  figure {
     justify-content: center;
   }
 }
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 .layout-section {
@@ -66,7 +47,7 @@ a {
 }
 
 @media screen and (min-width: 426px) {
-.layout-section {
-  margin: 5% 0;
-} 
+  .layout-section {
+    margin: 2% 0;
+  }
 }

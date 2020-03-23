@@ -1,0 +1,43 @@
+.ContactForm {
+  background-color: #e0b4b6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
+  padding: 5% 5%;
+  border-radius: 15px;
+}
+
+.ContactForm__title-base {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #ab1f26;
+  font-weight: bold;
+}
+
+.ContactForm__title-constrast {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.ContactForm input {
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding: 10px 10px;
+}
+
+.ContactForm textarea {
+  padding: 10px 10px;
+}
+
+@media screen and (min-width: 426px) {
+  .ContactForm__title {
+    padding: 0 20%;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+}
