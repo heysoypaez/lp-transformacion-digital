@@ -33,10 +33,9 @@ function OurProposalForTeachers(props) {
 
   return (
     <section className="OurProposalForTeachers our-team-section">
-
       <h3 className="OurProposalForTeachers__title">
         Nuestra propuesta para Profesores y Directores
-      </h3> 
+      </h3>
 
       <Card
         card={{
@@ -46,8 +45,7 @@ function OurProposalForTeachers(props) {
       />
       <Card
         card={{
-          title:
-            "Diferentes evaluaciones de satisfacción y aprendizaje",
+          title: "Diferentes evaluaciones de satisfacción y aprendizaje",
           image: data.allFile.edges[1].node.childImageSharp.fluid,
         }}
       />

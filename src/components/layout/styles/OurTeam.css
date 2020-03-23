@@ -19,15 +19,12 @@
   font-weight: 500;
 }
 
-
 .our-team-section__title {
   font-size: 44px;
   font-family: "Anton", sans-serif;
   color: white;
   font-weight: normal;
 }
-
-
 
 @media screen and (min-width: 426px) {
   .our-team-section__item-1 {
@@ -59,5 +56,9 @@
   .our-team-section__item-2 li {
     font-size: 18px;
     font-weight: 500;
+  }
+
+  .our-team-section__title {
+    font-size: 26px;
   }
 }

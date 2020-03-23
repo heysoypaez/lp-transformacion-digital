@@ -34,9 +34,7 @@ function BenefitsSection(props) {
   return (
     <section className="layout-section benefits-section">
       <section className="benefits-section__item benefits-section__item-1">
-        <h3 className="benefits-section__item-1__title">
-          Te ayudamos a
-        </h3>
+        <h3 className="benefits-section__item-1__title">Te ayudamos a</h3>
       </section>
       <section className="benefits-section__item benefits-section__item-2">
         <ul>

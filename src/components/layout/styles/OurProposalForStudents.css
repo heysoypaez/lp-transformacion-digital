@@ -1,19 +1,23 @@
-
 .OurProposalForStudents {
-	display: grid;
-	grid-template-columns: 1fr
-}
-
-.OurProposalForStudents__division {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .OurProposalForStudents__division > section:nth-child(1) {
-	margin-right: 5%;
+  margin-right: 5%;
 }
 
 .OurProposalForStudents__title {
-	font-family: "Anton" sans-serif;
-	font-size: 44px;
-	color: white;
+  font-family: "Anton" sans-serif;
+  font-size: 44px;
+  color: white;
+}
+
+@media screen and (max-width: 425px) {
+}
+
+@media screen and (min-width: 426px) {
+  .OurProposalForStudents__division {
+    display: flex;
+  }
 }

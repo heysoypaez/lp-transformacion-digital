@@ -1,16 +1,5 @@
 .TeamMemberCard {
-  text-align: left;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  background: white;
-  border-radius: 30px;
-  padding: 3% 5%;
-}
-
-.TeamMemberCard.inverse {
-  text-align: right;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   background: white;
   border-radius: 30px;
   padding: 3% 5%;
@@ -24,15 +13,40 @@
 .TeamMemberCard__occupation {
   font-family: "Anton" sans-serif;
   font-size: 18px;
-  color: #495057 
+  color: #495057;
 }
 
 .TeamMemberCard__name {
-   font-family: "Anton" sans-serif;
+  font-family: "Anton" sans-serif;
   font-size: 33px;
-  color: #AB1F26 
+  color: #ab1f26;
 }
 
 .TeamMemberCard__photo {
   border-radius: 100%;
+}
+
+@media screen and (min-width: 426px) {
+  .TeamMemberCard {
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+  }
+
+  .TeamMemberCard.inverse {
+    text-align: right;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: white;
+    border-radius: 30px;
+    padding: 3% 5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .TeamMemberCard {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+  }
 }
