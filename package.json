@@ -7,6 +7,8 @@
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
+    "gatsby-plugin-facebook-pixel": "^1.0.3",
+    "gatsby-plugin-linkedin-insight": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -20,7 +22,8 @@
   "devDependencies": {
     "gatsby-plugin-sharp": "^2.5.1",
     "gatsby-transformer-sharp": "^2.4.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "purgecss": "^2.1.0"
   },
   "keywords": [
     "gatsby"

@@ -49,7 +49,9 @@ const Header = ({ siteTitle }) => {
           <li>
             {" "}
             <img src={envelopeIcon} className="header_icon" />{" "}
-            <a href="mailto:f.palacios@impulsados.cl">f.palacios@impulsados.cl </a>
+            <a href="mailto:f.palacios@impulsados.cl">
+              f.palacios@impulsados.cl{" "}
+            </a>
           </li>
         </ul>
       </section>

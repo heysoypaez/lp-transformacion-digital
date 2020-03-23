@@ -16,7 +16,7 @@ const CompaniesTrust = props => {
           node {
             base
             childImageSharp {
-              fixed(width: 200, height: 200) {
+              fixed(width: 150, height: 150) {
                 aspectRatio
                 base64
                 width

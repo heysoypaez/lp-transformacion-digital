@@ -35,7 +35,7 @@ function OurProposalForStudents(props) {
     <section className="OurProposalForStudents our-team-section">
       <h3 className="OurProposalForStudents__title">
         Nuestra propuesta para Alumnos
-      </h3> 
+      </h3>
       <section className="OurProposalForStudents__division">
         <Card
           card={{

@@ -72,4 +72,8 @@
   .principal-section li {
     line-height: 1.2;
   }
+
+  .principal-section__item-1__title {
+    font-size: 46px;
+  }
 }

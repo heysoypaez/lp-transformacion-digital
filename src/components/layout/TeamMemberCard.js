@@ -16,12 +16,12 @@ function TeamMemberCard({ teamMember, order }) {
 
   const photoTeamMember = (
     <figure>
-      <img 
-        src={teamMember.photo} 
-        alt={teamMember.name} 
-        width="220" 
+      <img
+        src={teamMember.photo}
+        alt={teamMember.name}
+        width="220"
         heigth="220"
-        className="TeamMemberCard__photo" 
+        className="TeamMemberCard__photo"
       />
     </figure>
   )
