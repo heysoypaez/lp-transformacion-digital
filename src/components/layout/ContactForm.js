@@ -7,14 +7,15 @@ function ContactForm(props) {
       method="post"
       className="ContactForm"
       name="contact-form"
-      action="https://formspree.io/f.palacios@impulsados.cl"
-      netlify="true"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
       <h2 className="ContactForm__title">
         <span className="ContactForm__title-base">Solicita una demo</span>{" "}
         <br />
         <span className="ContactForm__title-constrast"> de tu proyecto</span>
       </h2>
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" placeholder="Nombre" name="name" />
       <input type="text" placeholder="Apellido" name="lastname" />
       <input type="email" placeholder="Email" name="_replyto" />
