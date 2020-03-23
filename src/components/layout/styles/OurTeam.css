@@ -19,15 +19,15 @@
   font-weight: 500;
 }
 
-.our-team-section__item-2 mark {
-  background-color: #a91b0d;
+
+.our-team-section__title {
+  font-size: 44px;
+  font-family: "Anton", sans-serif;
   color: white;
+  font-weight: normal;
 }
 
-.our-team-section__item-2__title {
-  font-size: 60px;
-  line-height: 1.3;
-}
+
 
 @media screen and (min-width: 426px) {
   .our-team-section__item-1 {

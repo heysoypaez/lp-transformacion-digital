@@ -31,7 +31,8 @@
 
 .header li a {
   list-style-type: none;
-  color: black;
+  font-size: 14px;
+  color: #495057;
 }
 
 @media screen and (min-width: 426px) {

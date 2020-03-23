@@ -17,5 +17,22 @@
 }
 
 .TeamMemberCard__description {
-  font-size: 16px;
+  font-size: 12px;
+  color: #495057;
+}
+
+.TeamMemberCard__occupation {
+  font-family: "Anton" sans-serif;
+  font-size: 18px;
+  color: #495057 
+}
+
+.TeamMemberCard__name {
+   font-family: "Anton" sans-serif;
+  font-size: 33px;
+  color: #AB1F26 
+}
+
+.TeamMemberCard__photo {
+  border-radius: 100%;
 }

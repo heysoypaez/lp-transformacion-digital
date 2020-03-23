@@ -10,10 +10,15 @@
   margin-top: 0;
   margin-bottom: 5%;
   padding-left: 20px;
-  font-size: 60px;
   line-height: 1;
   text-align: center;
+  color:#495057;
+  font-family: "Anton", sans-serif;
+  font-size: 44px;
+  font-weight: normal;
+
 }
+
 
 .companies-trust-section__item-2__companies {
   background-color: white;
@@ -24,6 +29,11 @@
 }
 
 @media screen and (min-width: 426px) {
+
+  .companies-trust-section {
+    padding: 3% 12%;
+  }
+
   .companies-trust-section__item-1 {
     grid-column: 1/7;
   }
