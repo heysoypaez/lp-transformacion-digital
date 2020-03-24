@@ -2,16 +2,30 @@
   display: grid;
   background: white;
   border-radius: 30px;
-  padding: 3% 5%;
+
   text-align: center;
-  justify-content: center;
   align-items: center;
   margin-bottom: 3%;
+  align-content: start;
 }
 
 .Card__title {
   color: #ab1f26;
+  font-family: "Anton", sans-serif;
+  font-weight: normal;
 }
 
 .Card__image {
+}
+
+@media screen and (min-width: 426px) {
+  .Card {
+    padding: 3% 80px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Card {
+    padding: 3% 5%;
+  }
 }

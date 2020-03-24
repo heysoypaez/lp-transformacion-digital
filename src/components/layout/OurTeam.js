@@ -15,11 +15,17 @@ function OurTeam(props) {
           teamMember={{
             name: "Nicolás Melgarejo",
             occupation: "Especialista en educación online",
-            occupationDetails:
-              "Fundador y CEO de TI Class Preuniversitario, con  más de 4000 alumnos año a año. ",
+            occupationDetails: [
+              "Fundador y CEO de TI Class Preuniversitario,",
+              <strong>con más de 4.000 alumnos año a año.</strong>,
+            ],
             photo: nicolasMalgrejoImg,
-            description:
-              "De profesión profesor, es el Autor del primer libro gratuito de PSU Física con más de 150.000 descargas. Se desempeñó como Gerente de innovación educativa y Jefe de Área Académica en OGR PuntajeNacional.cl Desarrolló sistemas de clases online en vivo desde el 2012 y la aplicación educativa PSU 850 con más de 500.000 descargas en Play Store.",
+            description: [
+              "De profesión profesor, es el Autor del primer libro gratuito de PSU Física con más de 150.000 descargas. Se desempeñó como Gerente de innovación educativa y Jefe de Área Académica en OGR PuntajeNacional.cl Desarrolló sistemas de clases online en vivo desde el 2012 y la ",
+              <strong>aplicación educativa</strong>,
+              " PSU 850 con ",
+              <strong> más de 500.000 descargas en Play Store.</strong>,
+            ],
           }}
         />
 

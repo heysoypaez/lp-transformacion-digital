@@ -31,7 +31,12 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Raleway:400,700", "Proxima Nova", "Avenir", "Anton"],
+          families: [
+            "Raleway:400,700",
+            "Proxima Nova",
+            "Avenir",
+            "Anton:300,400,500,600,700",
+          ],
         },
       },
     },

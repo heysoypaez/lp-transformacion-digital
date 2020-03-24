@@ -15,7 +15,6 @@
 }
 
 .ContactForm__title-constrast {
-  font-family: "Raleway", sans-serif;
   font-size: 15px;
   color: #333333;
   font-weight: bold;
@@ -25,15 +24,17 @@
   border-radius: 20px;
   border: 1px solid gray;
   padding: 10px 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 .ContactForm textarea {
   padding: 10px 10px;
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (min-width: 426px) {
   .ContactForm__title {
-    padding: 0 20%;
+    padding: 0 10%;
     line-height: 1;
     text-align: center;
   }

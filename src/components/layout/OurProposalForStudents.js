@@ -17,7 +17,7 @@ function OurProposalForStudents(props) {
           node {
             base
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid(maxWidth: 1000, quality: 100, pngQuality: 100) {
                 aspectRatio
                 base64
                 src
@@ -39,13 +39,17 @@ function OurProposalForStudents(props) {
       <section className="OurProposalForStudents__division">
         <Card
           card={{
-            title: "Programación de actividades del día",
+            title: ["Programación de", <br />, "actividades del día."],
             image: data.allFile.edges[0].node.childImageSharp.fluid,
           }}
         />
         <Card
           card={{
-            title: "Calendarización de actividades en periodos personalizables",
+            title: [
+              "Calendarización de actividades",
+              <br />,
+              "en periodos personalizables.",
+            ],
             image: data.allFile.edges[1].node.childImageSharp.fluid,
           }}
         />
