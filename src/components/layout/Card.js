@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles/Card.css"
+// eslint-disable-next-line
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 

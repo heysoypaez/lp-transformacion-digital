@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles/TeamMemberCard.css"
+// eslint-disable-next-line
 import PropTypes from "prop-types"
 
 function TeamMemberCard({ teamMember, order }) {

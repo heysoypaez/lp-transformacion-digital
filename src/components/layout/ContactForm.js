@@ -1,5 +1,5 @@
 import React from "react"
-import { navigate } from 'gatsby-link'
+import { navigate } from "gatsby-link"
 import "./styles/ContactForm.css"
 
 function encode(data) {
@@ -11,7 +11,7 @@ function encode(data) {
 function ContactForm(props) {
   const [state, setState] = React.useState({})
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
@@ -32,7 +32,7 @@ function ContactForm(props) {
 
   return (
     <form
-      method="post"
+      method="POST"
       className="ContactForm"
       name="contact-form"
       data-netlify="true"

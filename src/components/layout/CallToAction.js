@@ -1,5 +1,6 @@
 import React from "react"
 import "./styles/CallToAction.css"
+// eslint-disable-next-line
 import PropTypes from "prop-types"
 
 function CallToAction({ title, linkTo }) {
