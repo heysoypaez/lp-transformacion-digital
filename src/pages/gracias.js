@@ -11,8 +11,10 @@ import {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Inicio" />
-    <h1><center>Gracias por confiar en nosotros tú tambien</center></h1>
+    <SEO title="Gracias" />
+    <h1>
+      <center>Gracias por confiar en nosotros tú tambien</center>
+    </h1>
     <CompaniesTrust />
   </Layout>
 )
