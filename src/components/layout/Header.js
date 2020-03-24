@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="header">
       <figure className="header__item header__item-1">
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Img fluid={data.file.childImageSharp.fluid} alt="Logo Impulsados" />
       </figure>
       <section className="header__item header__item-2">
         <ul>
@@ -43,12 +43,17 @@ const Header = ({ siteTitle }) => {
               width="24px"
               height="24px"
               className="header_icon"
+              alt="Icono de telefono"
             />
             <a href="tel:+56983870290">+569 8387 0290</a>
           </li>
           <li>
             {" "}
-            <img src={envelopeIcon} className="header_icon" />{" "}
+            <img
+              src={envelopeIcon}
+              className="header_icon"
+              alt="Icono de correo"
+            />{" "}
             <a href="mailto:f.palacios@impulsados.cl">
               f.palacios@impulsados.cl{" "}
             </a>
