@@ -17,7 +17,7 @@ function OurProposalForTeachers(props) {
           node {
             base
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid(maxWidth: 1000, quality: 100, pngQuality: 80) {
                 aspectRatio
                 base64
                 src

@@ -8,7 +8,7 @@ const CompaniesTrust = props => {
     query CompaniesQuery {
       allFile(
         filter: {
-          relativeDirectory: { eq: "images/companies" }
+          relativeDirectory: { eq: "images/companies/original" }
           extension: { regex: "/png|jpeg|jpg/" }
         }
       ) {

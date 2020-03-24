@@ -18,6 +18,8 @@
 
 @media screen and (min-width: 426px) {
   .OurProposalForStudents__division {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
   }
 }

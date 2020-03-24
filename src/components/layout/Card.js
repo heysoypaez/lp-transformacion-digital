@@ -6,14 +6,14 @@ import Img from "gatsby-image"
 
 function Card(props) {
   return (
-    <section className="Card">
+    <article className="Card" key={props.card.image.id}>
       <h3 className="Card__title"> {props.card.title} </h3>
       <Img
         className="Card__image"
         fluid={props.card.image}
         alt={props.card.title || "card image"}
       />
-    </section>
+    </article>
   )
 }
 

@@ -11,9 +11,11 @@
 }
 
 .TeamMemberCard__occupation {
-  font-family: "Anton" sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 18px;
   color: #495057;
+  font-weight: normal;
+  margin: 0;
 }
 
 .TeamMemberCard__name {
@@ -30,6 +32,13 @@
   .TeamMemberCard {
     grid-template-columns: 1fr 2fr;
     text-align: left;
+    grid-column-gap: 50px;
+    padding: 3% 8%;
+    align-items: center;
+  }
+
+  .TeamMemberCard img {
+    text-align: center;
   }
 
   .TeamMemberCard.inverse {
