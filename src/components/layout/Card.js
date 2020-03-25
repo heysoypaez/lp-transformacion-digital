@@ -8,10 +8,16 @@ function Card(props) {
   return (
     <article className="Card" key={props.card.image.id}>
       <h3 className="Card__title"> {props.card.title} </h3>
-      <Img
+      <img
         className="Card__image"
-        fluid={props.card.image}
+        src={props.card.image}
+        lazy={true}
         alt={props.card.title || "card image"}
+        style={{
+          maxWidth: 800,
+          maxHeight: 400,
+          justifySelf: "center"
+        }}
       />
     </article>
   )

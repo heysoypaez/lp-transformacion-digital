@@ -3,6 +3,8 @@ import "./styles/OurProposalForTeachers.css"
 import CallToAction from "./CallToAction.js"
 import Card from "./Card.js"
 import { useStaticQuery, graphql } from "gatsby"
+import evaluationReportImg from "../../images/proposal/teachers/Diferentes-evaluaciones-de-satisfacción-y-aprendizaje---Profesores.png"
+import assitanceReportImg from "../../images/proposal/teachers/Periodos-de-participación-de-alumno-por-clase---Profesores.png"
 
 function OurProposalForTeachers(props) {
   const data = useStaticQuery(graphql`
@@ -34,19 +36,19 @@ function OurProposalForTeachers(props) {
   return (
     <section className="OurProposalForTeachers our-team-section">
       <h3 className="OurProposalForTeachers__title">
-        Nuestra propuesta para Profesores y Directores
+        Nuestra propuesta para <br /> Profesores y Directores
       </h3>
 
       <Card
         card={{
           title: "Diferentes evaluaciones de satisfacción y aprendizaje",
-          image: data.allFile.edges[0].node.childImageSharp.fluid,
+          image: evaluationReportImg
         }}
       />
       <Card
         card={{
           title: "Diferentes evaluaciones de satisfacción y aprendizaje",
-          image: data.allFile.edges[1].node.childImageSharp.fluid,
+          image: assitanceReportImg
         }}
       />
       <CallToAction />
