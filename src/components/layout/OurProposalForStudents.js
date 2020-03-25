@@ -3,6 +3,13 @@ import "./styles/OurProposalForStudents.css"
 import CallToAction from "./CallToAction.js"
 import Card from "./Card.js"
 import { useStaticQuery, graphql } from "gatsby"
+import   activitiesCalendarImg from "../../images/proposal/students/Calendarización-de-actividades-en-periodos-personalizables---Alumnos.png"
+import   tasksOftheDayImg from "../../images/proposal/students/Programación-de-actividades-del-día---Alumno.png"
+
+import   stateOfProgressyImg from "../../images/proposal/students/Estados-de-avance-por-curso-y-contenidos---Alumnos.png"
+
+import   suscriptionsImg from "../../images/proposal/students/Suscripciones-a-uno-o-varios-cursos-o-programas-dentro-de-tu-academia---Alumnos.png"
+
 
 function OurProposalForStudents(props) {
   const data = useStaticQuery(graphql`
@@ -39,8 +46,8 @@ function OurProposalForStudents(props) {
       <section className="OurProposalForStudents__division">
         <Card
           card={{
-            title: ["Programación de", <br />, "actividades del día."],
-            image: data.allFile.edges[0].node.childImageSharp.fluid,
+            title: ["Programación de", <br />, "actividades del día"],
+            image: tasksOftheDayImg,
           }}
         />
         <Card
@@ -48,23 +55,23 @@ function OurProposalForStudents(props) {
             title: [
               "Calendarización de actividades",
               <br />,
-              "en periodos personalizables.",
+              "en periodos personalizables",
             ],
-            image: data.allFile.edges[1].node.childImageSharp.fluid,
+            image: activitiesCalendarImg
           }}
         />
       </section>
       <Card
         card={{
           title: "Programación de actividades del día",
-          image: data.allFile.edges[3].node.childImageSharp.fluid,
+          image: suscriptionsImg,
         }}
       />
       <Card
         card={{
           title:
             "Suscripciones a uno o varios cursos o programas dentro de tu academia",
-          image: data.allFile.edges[2].node.childImageSharp.fluid,
+          image: stateOfProgressyImg,
         }}
       />
       <CallToAction />
