@@ -30,12 +30,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
+      	custom: {
+      		families: ["Anton"],
+      		urls: ["./src/fonts/Anton.css"]
+      	},
         google: {
           families: [
             "Raleway:400,700",
             "Proxima Nova",
             "Avenir",
-            "Anton:300,400,500,600,700",
+            //"Anton:300,400,500,600,700",
           ],
         },
       },
