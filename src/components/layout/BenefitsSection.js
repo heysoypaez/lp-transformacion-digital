@@ -47,7 +47,7 @@ function BenefitsSection(props) {
             {" "}
             <Img fixed={data.allFile.edges[0].node.childImageSharp.fixed} />
             <p>
-              Desarrollar <br /> una plataforma <br /> personalizada
+              Desarrollar <br /> una plataforma <br /> automatizada
             </p>
           </li>
           <li>

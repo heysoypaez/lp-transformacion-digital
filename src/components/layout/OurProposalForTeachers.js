@@ -20,7 +20,7 @@ function OurProposalForTeachers(props) {
       />
       <Card
         card={{
-          title: "Diferentes evaluaciones de satisfacción y aprendizaje",
+          title: "Control de asistencia y participación por clase",
           image: assitanceReportImg,
         }}
       />
