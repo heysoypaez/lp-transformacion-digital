@@ -6,7 +6,6 @@ import evaluationReportImg from "../../images/proposal/teachers/Diferentes-evalu
 import assitanceReportImg from "../../images/proposal/teachers/Periodos-de-participación-de-alumno-por-clase---Profesores.png"
 
 function OurProposalForTeachers(props) {
-
   return (
     <section className="OurProposalForTeachers our-team-section">
       <h3 className="OurProposalForTeachers__title">
@@ -16,13 +15,13 @@ function OurProposalForTeachers(props) {
       <Card
         card={{
           title: "Diferentes evaluaciones de satisfacción y aprendizaje",
-          image: evaluationReportImg
+          image: evaluationReportImg,
         }}
       />
       <Card
         card={{
           title: "Diferentes evaluaciones de satisfacción y aprendizaje",
-          image: assitanceReportImg
+          image: assitanceReportImg,
         }}
       />
       <CallToAction />

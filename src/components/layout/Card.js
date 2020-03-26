@@ -15,7 +15,7 @@ function Card(props) {
         style={{
           maxWidth: 800,
           maxHeight: 400,
-          justifySelf: "center"
+          justifySelf: "center",
         }}
       />
     </article>

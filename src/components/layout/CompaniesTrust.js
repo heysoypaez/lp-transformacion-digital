@@ -11,6 +11,7 @@ const CompaniesTrust = props => {
           relativeDirectory: { eq: "images/companies/original" }
           extension: { regex: "/png|jpeg|jpg/" }
         }
+        sort: { fields: name, order: ASC }
       ) {
         edges {
           node {
@@ -18,7 +19,6 @@ const CompaniesTrust = props => {
             childImageSharp {
               fixed(width: 150, height: 150, quality: 80) {
                 aspectRatio
-                base64
                 width
                 height
                 src
