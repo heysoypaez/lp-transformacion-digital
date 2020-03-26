@@ -8,7 +8,7 @@ const CompaniesTrust = props => {
     query CompaniesQuery {
       allFile(
         filter: {
-          relativeDirectory: { eq: "images/companies/original" }
+          relativeDirectory: { eq: "images/companies/active" }
           extension: { regex: "/png|jpeg|jpg/" }
         }
         sort: { fields: name, order: ASC }
@@ -17,7 +17,7 @@ const CompaniesTrust = props => {
           node {
             base
             childImageSharp {
-              fixed(width: 150, height: 150, quality: 80) {
+              fixed(width: 185, height: 185, quality: 80) {
                 aspectRatio
                 width
                 height
