@@ -2,7 +2,6 @@ import React from "react"
 import "./styles/OurProposalForStudents.css"
 import CallToAction from "./CallToAction.js"
 import Card from "./Card.js"
-import { useStaticQuery, graphql } from "gatsby"
 import   activitiesCalendarImg from "../../images/proposal/students/Calendarización-de-actividades-en-periodos-personalizables---Alumnos.png"
 import   tasksOftheDayImg from "../../images/proposal/students/Programación-de-actividades-del-día---Alumno.png"
 
@@ -12,32 +11,6 @@ import   suscriptionsImg from "../../images/proposal/students/Suscripciones-a-un
 
 
 function OurProposalForStudents(props) {
-  const data = useStaticQuery(graphql`
-    query OurProposalForStudentsQuery {
-      allFile(
-        filter: {
-          relativeDirectory: { eq: "images/proposal/students" }
-          extension: { regex: "/png|jpeg|jpg/" }
-        }
-      ) {
-        edges {
-          node {
-            base
-            childImageSharp {
-              fluid(maxWidth: 1000, quality: 100, pngQuality: 100) {
-                aspectRatio
-                base64
-                src
-                sizes
-                srcSet
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <section className="OurProposalForStudents our-team-section">
       <h3 className="OurProposalForStudents__title">
