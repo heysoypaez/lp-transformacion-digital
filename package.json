@@ -22,7 +22,7 @@
     "react-load-script": "0.0.6"
   },
   "devDependencies": {
-    "gatsby-plugin-sharp": "^2.5.1",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-transformer-sharp": "^2.4.1",
     "prettier": "^1.19.1",
     "purgecss": "^2.1.0"
